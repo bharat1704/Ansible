@@ -1,0 +1,10 @@
+[servers]
+server_1 ansible_host=1.2.3.4 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-demo.pem
+server_2 ansible_host=5.88.66.13 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-demo.pem
+
+[prod]
+server_3 ansible_host=4.16.122.113 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-demo.pem
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+
