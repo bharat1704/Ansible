@@ -1,8 +1,8 @@
-- - name: Dates Playbook
-    hosts: servers
-    tasks:
-      - name: Show date
-        command: date
+- name: Dates Playbook
+  hosts: servers
+  tasks:
+    - name: Show date
+      command: date
 
-      - name: Show date again
-        command: date
+    - name: Show date again
+      command: date

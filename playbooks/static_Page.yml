@@ -1,4 +1,3 @@
----
 - name: Install Nginx and serve static website
   hosts: prod
   become: yes

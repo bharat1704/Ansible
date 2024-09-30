@@ -1,4 +1,3 @@
----
 - name: Install Nginx and start it
   hosts: servers
   become: yes
