@@ -1,12 +1,14 @@
-[servers]
-server_1 ansible_host=1.2.3.4 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-demo.pem
-server_2 ansible_host=5.88.66.13 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-demo.pem
+#Use Sudo vi etc/ansible/hosts command to edit the host file 
 
-[prod]
-server_3 ansible_host=4.16.122.113 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-demo.pem
+[servers] # Group 1
+server_1 ansible_host=1.2.3.4  # Enter the server's Local IP address
+server_2 ansible_host=5.88.66.13 # Enter the server's Local IP address
 
-[all:vars]
+[prod] #Group 2
+server_3 ansible_host=4.16.122.113 # Enter the server's Local IP address
+
+[all:vars] # Variable
 ansible_python_interpreter=/usr/bin/python3 #optional
 ansible_user=ubuntu #optional
-ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-demo.pem #Enter your key
+ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-demo.pem #Enter the location of the key
 
